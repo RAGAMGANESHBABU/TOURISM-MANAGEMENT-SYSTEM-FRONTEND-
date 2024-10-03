@@ -1,0 +1,78 @@
+/* src/components/ManageHomestays.css */
+.manage-homestays-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manage-homestays-container h2 {
+    text-align: center;
+    color: #6200ea;
+    margin-bottom: 20px;
+  }
+  
+  .add-homestay-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-homestay-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-homestay-button {
+    padding: 10px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-homestay-button:hover {
+    background-color: #3700b3;
+  }
+  
+  .homestays-list, .bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .homestay-item, .booking-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .delete-homestay-button, .cancel-booking-button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-homestay-button:hover, .cancel-booking-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .guests {
+    margin-top: 10px;
+  }
+  
+  .guests h4 {
+    margin-bottom: 5px;
+  }
+  
