@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Signup.css';
 
 function Signup() {
@@ -8,13 +8,38 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
 
-    // You can add any additional form validation or checks here if needed
+    if (password !== confirmPassword) {
+      alert('Passwords do not match');
+      return;
+    }
 
-    // Directly navigate to the login page without connecting to the backend
-    navigate('/login');
+    const newUser = { 
+      username, 
+      password,
+      role: 'tourist' // Set the role as 'tourist' by default
+    };
+
+    try {
+      const response = await fetch('http://localhost:8081/api/auth/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newUser),
+      });
+
+      if (response.ok) {
+        alert('User registered successfully!');
+        navigate('/login');
+      } else {
+        const message = await response.text();
+        alert(message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
@@ -45,6 +70,9 @@ function Signup() {
         <button type="submit" className="signup-button">
           Sign Up
         </button>
+        <p>
+          Already have an account? <Link to="/login">Login</Link>
+        </p>
       </form>
     </div>
   );

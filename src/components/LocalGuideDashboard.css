@@ -1,62 +1,163 @@
 /* src/components/LocalGuideDashboard.css */
 .local-guide-dashboard-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .local-guide-dashboard-container h2 {
-    text-align: center;
-    color: #6200ea;
-    margin-bottom: 20px;
-  }
-  
-  .recommendation-input {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .recommendation-input input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 70%;
-  }
-  
-  .add-button {
-    padding: 10px 15px;
-    background-color: #6200ea;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  
-  .add-button:hover {
-    background-color: #3700b3;
-  }
-  
-  .message {
-    text-align: center;
-    color: green;
-    margin-top: 10px;
-  }
-  
-  .recommendations-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .recommendations-list li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-  }
-  
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.local-guide-dashboard-container h2 {
+  text-align: center;
+  color: #6200ea;
+  margin-bottom: 20px;
+}
+
+.recommendation-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recommendation-input input,
+.recommendation-input textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.recommendation-input input[type="file"] {
+  width: 70%;
+  padding: 10px;
+}
+
+.add-button {
+  padding: 10px 15px;
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-button:hover {
+  background-color: #3700b3;
+}
+
+.delete-button {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.image-preview {
+  max-width: 200px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.message {
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+}
+
+.recommendations-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recommendations-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.recommendations-list li h4 {
+  margin: 0;
+  color: #6200ea;
+}
+
+.recommendations-list li p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.recommendations-list li img {
+  max-width: 200px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.recommendations-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.recommendation-details {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.text-section {
+  flex: 3;
+  text-align: left;
+}
+
+.text-section h3 {
+  margin: 5px 0;
+  color: #6200ea;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.image-section {
+  flex: 1;
+  text-align: right;
+}
+
+.image-section img {
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  object-fit: cover;
+}
+

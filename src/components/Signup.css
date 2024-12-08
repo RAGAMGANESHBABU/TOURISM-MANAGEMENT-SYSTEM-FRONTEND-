@@ -41,17 +41,17 @@
   .signup-form .signup-button {
     width: 100%;
     padding: 10px;
-    background-color: #db12ea;
+    background-color: #6200ea;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .signup-form .signup-button:hover {
+  /*.signup-form .signup-button:hover {
     background-color: #0056b3;
-  }
+  }*/
   
   .signup-form p {
     text-align: center;

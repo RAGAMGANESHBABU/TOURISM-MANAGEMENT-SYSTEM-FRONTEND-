@@ -1,0 +1,38 @@
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the booking items horizontally */
+  gap: 20px;
+}
+
+.booking-item {
+  width: 100%;
+  max-width: 500px; /* Increased max width to make the card larger */
+  padding: 20px; /* Increased padding for a larger card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
+}
+
+.cancel-booking-button {
+  padding: 8px 12px; /* Slightly increased button padding */
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-booking-button:hover {
+  background-color: #cc0000;
+}
+
+.guests {
+  margin-top: 15px; /* Increased spacing above guests list */
+}
+
+.guests h4 {
+  margin-bottom: 8px; /* Increased spacing below guests header */
+}

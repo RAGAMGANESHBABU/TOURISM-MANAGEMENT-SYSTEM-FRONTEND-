@@ -1,0 +1,74 @@
+/* TouristLocations.css */
+
+.locations-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-card-header {
+  text-align: left;
+}
+
+.location-name-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.location-name-button:hover {
+  text-decoration: underline;
+}
+
+.location-details {
+  display: flex;
+  margin-top: 10px;
+  gap: 100px; /* Further increased gap for a longer distance between image and description */
+  align-items: flex-start;
+}
+
+.image-section {
+  flex: 1;
+  max-width: 200px;
+}
+
+.location-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description-section {
+  flex: 2;
+}
+
+.description-section h3 {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.description-section p {
+  color: #666;
+  line-height: 1.5;
+}

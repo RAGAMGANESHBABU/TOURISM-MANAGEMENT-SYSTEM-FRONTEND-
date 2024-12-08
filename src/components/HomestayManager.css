@@ -1,0 +1,97 @@
+.homestay-manager-container {
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.homestay-manager-container h2 {
+    text-align: center;
+    color: #4a148c;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.add-homestay-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.add-homestay-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.add-homestay-form input:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.add-homestay-button {
+    padding: 12px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-homestay-button:hover {
+    background-color: #3700b3;
+    transform: scale(1.02);
+}
+
+.homestays-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.homestay-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homestay-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.delete-homestay-button {
+    padding: 8px 15px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-homestay-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.guests {
+    margin-top: 15px;
+}
+
+.guests h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
