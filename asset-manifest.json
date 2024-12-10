@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/css/main.e568590a.css",
+    "main.js": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/js/main.0ad57d73.js",
+    "static/js/453.8bd1ff9e.chunk.js": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/js/453.8bd1ff9e.chunk.js",
+    "index.html": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/index.html",
+    "main.e568590a.css.map": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/css/main.e568590a.css.map",
+    "main.0ad57d73.js.map": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/js/main.0ad57d73.js.map",
+    "453.8bd1ff9e.chunk.js.map": "/RAGAMGANESHBABU/TOURISM-MANAGEMENT-SYSTEM-FRONTEND-.git/static/js/453.8bd1ff9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e568590a.css",
+    "static/js/main.0ad57d73.js"
+  ]
+}
