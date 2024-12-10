@@ -48,7 +48,7 @@ function Signup() {
         <h2>Sign Up</h2>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Email"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
